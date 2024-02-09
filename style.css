@@ -10,7 +10,9 @@ body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   color: #f7f7f7;
-  background-color: #000000;
+  background: linear-gradient(to bottom, transparent, rgb(27, 27, 27)),
+    url("https://scontent.fceb2-2.fna.fbcdn.net/v/t39.30808-6/419451547_698546832391216_5924913643738920491_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeHXO8aKjgKw8UQxtLJ1tuQziK3YbXA6o96IrdhtcDqj3hRSYMsaTad22ghfYQTGGCFaIP5yGXgTLzMhI6AkPcI4&_nc_ohc=ISs8YAU1VcYAX_ocl7I&_nc_ht=scontent.fceb2-2.fna&oh=00_AfBjmekLdtlJsKk2j8KLqOiLSFiLgVpgnkmkoXqQd1wH6A&oe=65CB8EB3");
+   
 }
 
 .nav {
@@ -67,6 +69,20 @@ body {
   }
 }
 
+.side-nav {
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  padding: 30px 25px;
+  background-image: url('https://images.pexels.com/photos/6847584/pexels-photo-6847584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  transition: width 0.5s;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 #ulContainer {
   list-style: none;
   padding: 0 15px;
@@ -93,14 +109,16 @@ body {
 
 .slider {
   overflow: hidden;
+  margin: 0 110px;
 }
 
 .slider figure {
   position: relative;
-  width: 500%;
+  width: 300%;
   margin: 0 0;
   left: 0;
-  animation: 20s slider infinite;
+  right: 0;
+  animation: 30s slider infinite;
 }
 
 .slider figure img {
@@ -136,4 +154,12 @@ body {
   100% {
     left: -230%;
   }
+}
+
+.anncmnt {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  padding: 7%;
 }
