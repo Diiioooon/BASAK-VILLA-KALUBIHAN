@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  color: #f7f7f7;
+  background-color: #000000;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  color: black;
+  background-image: url('https://images.pexels.com/photos/6847584/pexels-photo-6847584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mid-nav {
+  padding: 0 0.5rem;
+}
+
+.mid-nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.mid-nav ul a {
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  height: 150px;
+  
+}
+
+.social {
+  font-size: 1.25rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.social > * {
+  transform: all 0.3s;
+  color: black;
+}
+
+.social:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 613px) {
+  .social {
+    margin: 0 auto;
+  }
+}
+
+#ulContainer {
+  list-style: none;
+  padding: 0 15px;
+  color: white;
+}
+
+#ulContainer li {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+#ulContainer li {
+  width: 30px;
+  margin-right: 10px;
+}
+
+#ulContainer li p {
+  white-space: nowrap;
+  display: none;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+
+.slider figure img {
+  float: left;
+  width: 8.2%;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -40%;
+  }
+  45% {
+    left: -40%;
+  }
+  50% {
+    left: -90%;
+  }
+  70% {
+    left: -90%;
+  }
+  75% {
+    left: -150%;
+  }
+  95% {
+    left: -150%;
+  }
+  100% {
+    left: -230%;
+  }
+}
